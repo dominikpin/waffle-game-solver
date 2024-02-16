@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller2">
+   <children>
+      <VBox fx:id="content" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" visible="false">
+         <children>
+            <TilePane fx:id="tileBoard" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Previous" />
+                  <Button mnemonicParsing="false" text="Next" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox fx:id="loadingScreen" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Loading...">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <ProgressBar fx:id="progressBar" prefWidth="300.0" progress="0.0" />
+         </children>
+      </VBox>
+   </children>
+</StackPane>
