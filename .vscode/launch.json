@@ -8,8 +8,13 @@
             "type": "java",
             "name": "WaffleGameSolver",
             "request": "launch",
-            "mainClass": "WaffleGameSolver",
-            "vmArgs": ["--module-path", "C:/Program Files/JavaFX/javafx-sdk-21.0.2/lib", "--add-modules", "javafx.controls,javafx.fxml"]
+            "mainClass": "hampter.WaffleGameSolver",
+            "vmArgs": [
+                "--module-path",
+                "C:/Program Files/JavaFX/javafx-sdk-21.0.2/lib",
+                "--add-modules",
+                "javafx.controls,javafx.fxml"
+            ]
         }
     ]
 }

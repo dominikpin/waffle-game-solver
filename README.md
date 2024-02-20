@@ -1,18 +1,37 @@
-## Getting Started
+# Waffle game solver
+This is a solver for Waffle [game](https://wafflegame.net)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Table of Contents
 
-## Folder Structure
+- [About](#about)
+- [Folder structure](#folder-structure)
+- [Installing](#installing)
+- [Contributing](#contributing)
 
-The workspace contains two folders by default, where:
+## About
 
-- `src`: the folder to maintain sources
+Welcome to the Waffle Game Solver, your ultimate companion for conquering the addictive puzzle game, Waffle! Developed with a passion for problem-solving and a love for challenging puzzles, my solver is designed to help you breeze through even the toughest levels of Waffle with most swaps remaining.
+
+With its intuitive interface, the Waffle Game Solver provides step-by-step solutions tailored to your specific puzzle configurations. Whether you're a novice looking to improve your skills or a seasoned player seeking to master every level, our solver is here to assist you on your journey to waffle domination. Say goodbye to frustration and hello to triumph as you watch our solver effortlessly guide you towards victory, one crispy square at a time.
+
+## Folder structure
+
+The workspace contains four folders, where:
+
+- `.vscode`: the folder to maintain VSCode settings and launching settings
+- `bin`: the folder to maintain compiled classes
 - `lib`: the folder to maintain dependencies
+- `src`: the folder to maintain sources
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Installing
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+(Windows) To install the solver, you have to have installed javaFX and latest java jdk. After installing java and javaFX follow these next steps:
+Download the GameOfLife.jar file and waffle-game-solver.vbs.
+Edit waffle-game-solver.vbs so --module-path is your path to javaFX/lib directory and save it.
+Run solver by running waffle-game-solver.vbs.
 
-## Dependency Management
+Alternatively:
+Close repository (still have to have java jdk installed) and run waffle-game-solver.vbs.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Contributing
+Dimnik(dominikpin).
