@@ -32,9 +32,14 @@ public class Controller1 {
         });
     }
 
-    public void setSpinnerValue(int value) {
+    public void setToggleGroupsAndSpinnerValue(boolean isDeluxe, boolean isArchive, int value) {
+        ((RadioButton)group1.getToggles().get(isDeluxe ? 1 : 0)).setSelected(true);
+        ((RadioButton)group2.getToggles().get(isArchive ? 1 : 0)).setSelected(true);
         SpinnerValueFactory<Integer> valueFactory = spinner.getValueFactory();
         valueFactory.setValue(value);
+        if (isArchive) {
+            makeVisible();
+        }
     }
 
     public void makeVisible() {

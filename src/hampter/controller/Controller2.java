@@ -29,9 +29,13 @@ public class Controller2 {
     @FXML private TilePane tileBoard;
     private static ArrayList<Letter[][]> boards = new ArrayList<>();
     private static int boardNumber = 0;
+    private static boolean isDelu;
+    private static boolean isArch;
     private static int gameNum;
     
     public void calculateBestSwaps(boolean isDeluxe, boolean isArchive, int gameNumber) throws FileNotFoundException {
+        isDelu = isDeluxe;
+        isArch = isArchive;
         gameNum = gameNumber;
         boardNumber = 0;
         boards.clear();
@@ -80,7 +84,7 @@ public class Controller2 {
             e.printStackTrace();
         }
         Controller1 controller1 = loader.getController();
-        controller1.setSpinnerValue(gameNum);
+        controller1.setToggleGroupsAndSpinnerValue(isDelu, isArch, gameNum);
     }
 
     private void makeBoard() {
